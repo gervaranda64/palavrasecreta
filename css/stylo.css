@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 90%;
+    margin-top: 10px;
+    background-color: goldenrod;
+}
+.container {
+    display: flex;/* alinhamento objeto flexivel */
+    justify-content: center; 
+    align-items: center;/* item alinhado no centro */
+    flex-wrap: wrap; /* elemento por lina */
+    flex-direction: column; /* direção de colunas */
+}
+
+#imagem {
+    background-image: url(../imagens/imagem1.png);
+    width: 400px;
+    height: 270px;
+    background-repeat: no-repeat;
+}
+
+#palavra_secreta {
+    display: flex;
+    flex-direction: row;/* alinhamento em linha */
+    justify-content: center; /* justificado e alinhado no centro */
+    align-items: center;/* item alinhado no centro */
+    font-size: 1em;/*tamanho da fonte */
+    margin-top: 30px;
+}
+.letras {
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    color: white;
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.letrasEspaco {
+    width: 16px;
+    text-align: center;
+    
+    color: white;
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+#teclado {
+    margin-top: 30px;
+}
+.teclas button {
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px dimgray;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    font-weight: 900;
+}
+
+.teclas button:disabled {
+    cursor: not-allowed;
+}
+
+.teclas button:hover {
+    transform: scale(1.3);
+}
+#categoria {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+@media (min-width: 321px){
+    .teclas button {
+        width: 25px;
+        height: 25px;
+    }
+    #categoria {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 376px){
+    .teclas button {
+        width: 30px;
+        height: 30px;
+    }
+    #palavra_secreta {
+        font-size: 1.3em;
+    }
+    .letras {
+        width: 18px;
+    }
+    #categoria {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 376px){
+    .teclas button {
+        width: 30px;
+        height: 30px;
+    }
+    #palavra_secreta {
+        font-size: 1.3em;
+    }
+    .letras {
+        width: 18px;
+    }
+    #categoria {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 426px){
+    .teclas button {
+        width: 36px;
+        height: 36px;
+    }
+    #palavra_secreta {
+        font-size: 1.5em;
+    }
+    .letras {
+        width: 20px;
+    }
+    #categoria {
+        font-size: 1.6em;
+    }
+}
+
+@media (min-width: 769px){
+    .teclas button {
+        width: 68px;
+        height: 68px;
+        font-size: 2em;
+    }
+    #palavra_secreta {
+        font-size: 2.5em;
+    }
+    .letras {
+        width: 35px;
+    }
+    #categoria {
+        font-size: 2em;
+    }
+}
