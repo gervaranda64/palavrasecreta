@@ -156,10 +156,10 @@ btnReiniciar.addEventListener("click", function(){
 
 async function piscarBotaoReiniciar(){
     while(jogarNovamente == true){
-        document.getElementById("botaoReiniciar").style.backgroundColor = 'yellow';
-        document.getElementById("botaoReiniciar").style.scale = 1.3;
+        document.getElementById("botaoReiniciar").style.backgroundColor = '#00FF00';
+        document.getElementById("botaoReiniciar").style.scale = 1.2;
         await atraso(500)
-        document.getElementById("botaoReiniciar").style.backgroundColor = 'blue';
+        document.getElementById("botaoReiniciar").style.backgroundColor = '#FF0000';
         document.getElementById("botaoReiniciar").style.scale = 1.0;
         await atraso(500)
     }
