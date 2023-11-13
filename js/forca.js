@@ -101,7 +101,7 @@ async function comparaListas(letra){
     }
 
     if(vitoria == true){
-        abreModal("PARABENS!!!", "VOCE ACERTOU")
+        abreModal("PARABÉNS!!!", "VOCÊ ACERTOU")
         tentativas = 0;
         piscarBotaoReiniciar()
     }
@@ -114,23 +114,23 @@ async function atraso(tempo){
 function carregarImagemErros(){
     switch(tentativas){
         case 4:
-            document.getElementById("imagem").style.background = "url('./imagens/Errado.jpg')";
+            document.getElementById("imagem").style.background = "url('./imagens/vinte.png')";
             break;
 
         case 3:
-            document.getElementById("imagem").style.background = "url('./imagens/imagem1.png')";
+            document.getElementById("imagem").style.background = "url('./imagens/quarenta.png')";
             break;
 
         case 2:
-            document.getElementById("imagem").style.background = "url('./imagens/Errado2.png')";
+            document.getElementById("imagem").style.background = "url('./imagens/sessenta.png')";
             break;
 
         case 1:
-            document.getElementById("imagem").style.background = "url('./imagens/Erro.png')";
+            document.getElementById("imagem").style.background = "url('./imagens/oitenta.png')";
             break;
 
         default:
-            document.getElementById("imagem").style.background = "url('imagens/Erro.png')";
+            document.getElementById("imagem").style.background = "url('imagens/cem.png')";
             break;
 
     }

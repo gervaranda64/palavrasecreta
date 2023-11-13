@@ -19,10 +19,11 @@ body {
 }
 
 #imagem {
-    background-image: url(../imagens/imagem1.png);
-    width: 400px;
-    height: 270px;
+    text-align: center;
+    width: 800px;
+    height: 200px;
     background-repeat: no-repeat;
+    
 }
 
 #palavra_secreta {
@@ -158,3 +159,8 @@ body {
 #botaoReiniciar {
     border-radius: 40px;
 }
+
+h1 {
+    font-size: 70px;
+}
+
