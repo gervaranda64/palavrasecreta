@@ -81,6 +81,7 @@ async function comparaListas(letra){
             abreModal("OPS!!!", "NÃO FOI DESSA VEZ ... A PALAVRA SECRETA ERA : <br>" + "<h1>" + palavraSecretaSoteada + "</h1>")
             piscarBotaoReiniciar()
         }
+
         
         //verificar se ainda tem tentativas// mensagem de fim
     }
@@ -114,23 +115,25 @@ async function atraso(tempo){
 function carregarImagemErros(){
     switch(tentativas){
         case 4:
-            document.getElementById("imagem").style.background = "url('./imagens/vinte.png')";
+
+            document.getElementById('v1').src = "imagens/coracao_vazio.png"
+
             break;
 
         case 3:
-            document.getElementById("imagem").style.background = "url('./imagens/quarenta.png')";
+            document.getElementById('v2').src = "imagens/coracao_vazio.png"
             break;
 
         case 2:
-            document.getElementById("imagem").style.background = "url('./imagens/sessenta.png')";
+            document.getElementById('v3').src = "imagens/coracao_vazio.png"
             break;
 
         case 1:
-            document.getElementById("imagem").style.background = "url('./imagens/oitenta.png')";
+            document.getElementById('v4').src = "imagens/coracao_vazio.png"
             break;
 
         default:
-            document.getElementById("imagem").style.background = "url('imagens/cem.png')";
+            document.getElementById('v5').src = "imagens/coracao_vazio.png"
             break;
 
     }
