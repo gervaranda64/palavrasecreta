@@ -4,14 +4,53 @@ let listaDinamica = [];
 let palavraSecretaCategoria;
 let palavraSecretaSoteada;
 
+let palavraSecretaDica;
+
+
 const Palavras = [
-    palavra001={nome:"MONITOR", categoria:"HARDWARE"},
-    palavra002={nome:"TECLADO", categoria:"HARDWARE"},
-    palavra003={nome:"GABINETE", categoria:"HARDWARE"},
-    palavra003={nome:"PLACA MAE", categoria:"HARDWARE"},
-    palavra004={nome:"DRIVE", categoria:"SOFTWARE"},
-    palavra005={nome:"WINDOWS", categoria:"SOFTWARE"},
-    palavra006={nome:"LINUX", categoria:"SOFTWARE"},
+    palavra001={nome:"MICROSOFT WORD",
+     categoria:"CATEGORIA : SOFTWARE APLICATIVO", 
+    dica:"Usado para criar, editar, modificar e personalizar diversos tipos de textos."},
+
+    palavra002={nome:"MICROSOFT EXCEL",
+     categoria:"CATEGORIA : SOFTWARE APLICATIVO", 
+     dica:"é um software de planilhas eletrônicas."},
+
+    palavra003={nome:"WINDOWS", 
+     categoria:"CATEGORIA : SOFTWARE SISTEMA", 
+     dica:"sistema operacional desenvolvido pela microsoft"},
+    
+    palavra004={nome:"TECLADO",
+     categoria:"CATEGORIA : PERIFÉRICO DE ENTRADA ",
+     dica:"Permite a entrada de dados por meio de teclas alfanuméricas."},
+
+    palavra005={nome:"MOUSE", 
+    categoria:"CATEGORIA : PERIFÉRICO DE ENTRADA", 
+    dica:"Utilizado para movimentar o cursor na tela e realizar seleções"},
+
+    palavra006={nome:"SCANNERS", 
+    categoria:"CATEGORIA : PERIFÉRICO DE ENTRADA", 
+    dica:"Converte documentos e imagens em formato digital"},
+
+    palavra007={nome:"MONITOR", 
+    categoria: "CATEGORIA : PERIFÉRICO DE SAÍDA", 
+    dica:"dispositivo principal para exibir informações visuais."},
+
+    palavra008={nome:"PROJETOR", 
+    categoria: "CATEGORIA : PERIFÉRICO DE SAÍDA", 
+    dica:"Utilizado para projetar imagens ou apresentações em uma tela maior,"},
+
+    palavra009={nome:"WORMS", 
+    categoria: "CATEGORIA : MALWARES", 
+    dica:"programas que se replicam automaticamente e se espalham pela rede."},
+
+    palavra010={nome:"SPYWARE", 
+    categoria: "CATEGORIA : MALWARES", 
+    dica:"Coleta informações sobre as atividades do usuário sem o seu conhecimento."},
+
+    palavra011={nome:"KEYLOGGERS", 
+    categoria: "CATEGORIA : MALWARES", 
+    dica:"Registram as teclas digitadas para capturar informações confidenciais, como senhas."},
 ]
 
 criarPalavraSecreta();
@@ -20,12 +59,14 @@ function criarPalavraSecreta(){
 
     palavraSecretaSoteada = Palavras[indexpalavra].nome;
     palavraSecretaCategoria = Palavras[indexpalavra].categoria;
+    palavraSecretaDica = Palavras[indexpalavra].dica;
 } 
 
 montarPalavraTela();
 function montarPalavraTela(){
     const categoria = document.getElementById("categoria");
     categoria.innerHTML = palavraSecretaCategoria
+    dica.innerHTML = palavraSecretaDica
 
     const palavraTela = document.getElementById("palavra_secreta");
     palavraTela.innerHTML = "";
