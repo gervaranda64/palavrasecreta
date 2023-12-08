@@ -9,47 +9,47 @@ let palavraSecretaDica;
 
 const Palavras = [
     palavra001={nome:"MICROSOFT WORD",
-     categoria:"CATEGORIA : SOFTWARE APLICATIVO", 
+     categoria:"CATEGORIA : Software aplicativo", 
     dica:"Usado para criar, editar, modificar e personalizar diversos tipos de textos."},
 
     palavra002={nome:"MICROSOFT EXCEL",
-     categoria:"CATEGORIA : SOFTWARE APLICATIVO", 
+     categoria:"CATEGORIA : Software aplicativo", 
      dica:"é um software de planilhas eletrônicas."},
 
     palavra003={nome:"WINDOWS", 
-     categoria:"CATEGORIA : SOFTWARE SISTEMA", 
+     categoria:"CATEGORIA : Software de sistema", 
      dica:"sistema operacional desenvolvido pela microsoft"},
     
     palavra004={nome:"TECLADO",
-     categoria:"CATEGORIA : PERIFÉRICO DE ENTRADA ",
+     categoria:"CATEGORIA : Periférico de entrada",
      dica:"Permite a entrada de dados por meio de teclas alfanuméricas."},
 
     palavra005={nome:"MOUSE", 
-    categoria:"CATEGORIA : PERIFÉRICO DE ENTRADA", 
+    categoria:"CATEGORIA : Periférico de entrada", 
     dica:"Utilizado para movimentar o cursor na tela e realizar seleções"},
 
     palavra006={nome:"SCANNERS", 
-    categoria:"CATEGORIA : PERIFÉRICO DE ENTRADA", 
+    categoria:"CATEGORIA : Periférico de entrada", 
     dica:"Converte documentos e imagens em formato digital"},
 
     palavra007={nome:"MONITOR", 
-    categoria: "CATEGORIA : PERIFÉRICO DE SAÍDA", 
+    categoria: "CATEGORIA : Periférico de saída", 
     dica:"dispositivo principal para exibir informações visuais."},
 
     palavra008={nome:"PROJETOR", 
-    categoria: "CATEGORIA : PERIFÉRICO DE SAÍDA", 
+    categoria: "CATEGORIA : Periférico de saída", 
     dica:"Utilizado para projetar imagens ou apresentações em uma tela maior,"},
 
     palavra009={nome:"WORMS", 
-    categoria: "CATEGORIA : MALWARES", 
+    categoria: "CATEGORIA : Malwares", 
     dica:"programas que se replicam automaticamente e se espalham pela rede."},
 
     palavra010={nome:"SPYWARE", 
-    categoria: "CATEGORIA : MALWARES", 
+    categoria: "CATEGORIA : Malwares", 
     dica:"Coleta informações sobre as atividades do usuário sem o seu conhecimento."},
 
     palavra011={nome:"KEYLOGGERS", 
-    categoria: "CATEGORIA : MALWARES", 
+    categoria: "CATEGORIA : Malwares", 
     dica:"Registram as teclas digitadas para capturar informações confidenciais, como senhas."},
 ]
 
